@@ -3,12 +3,12 @@
 A production-grade blog/content platform built using **React, Redux Toolkit, Appwrite, Tailwind CSS, and Shadcn UI**.  
 This project focuses on real-world SaaS patterns, clean architecture, and scalable frontend development.
 
----
+
 
 ## 🚀 Live Demo
 👉 Add deployment link here
 
----
+
 
 ## 📌 Project Overview
 
@@ -166,7 +166,6 @@ VITE_APPWRITE_BUCKET_ID=
 -npm install
 -npm run dev
 
-## 🚀 Deployment
 
 ##👤 Author
 
