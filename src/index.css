@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core */
+    --radius: 0.5rem;
+
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    /* 🔵 DEFAULT (BLUE / INDIGO) */
+    --primary: 243 75% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 158 64% 52%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 243 75% 95%;
+    --accent-foreground: 243 75% 20%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5% 90%;
+    --input: 240 5% 90%;
+    --ring: 243 75% 59%;
+
+    /* Charts */
+    --chart-1: 243 75% 59%;
+    --chart-2: 158 64% 52%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 43 96% 56%;
+    --chart-5: 0 84% 60%;
+  }
+
+  /* 🌙 DARK MODE */
+  .dark {
+    --background: 222.2 47.4% 11.2%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 47.4% 13%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 47.4% 11.2%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 243 75% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 158 64% 45%;
+    --secondary-foreground: 0 0% 100%;
+
+    --accent: 243 30% 20%;
+    --accent-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 243 75% 59%;
+  }
+
+  /* 🟢 GREEN THEME */
+  :root[data-theme="green"] {
+    --primary: 158 64% 52%;
+    --ring: 158 64% 52%;
+    --accent: 158 64% 95%;
+    --accent-foreground: 158 64% 20%;
+  }
+
+  /* 🟣 PURPLE THEME */
+  :root[data-theme="purple"] {
+    --primary: 270 70% 60%;
+    --ring: 270 70% 60%;
+    --accent: 270 70% 95%;
+    --accent-foreground: 270 70% 20%;
+  }
+}
+
+/* 📝 Blog typography fix */
+.prose {
+  --tw-prose-body: hsl(var(--foreground));
+  --tw-prose-headings: hsl(var(--foreground));
+  --tw-prose-links: hsl(var(--primary));
+}
+
+/* 🌈 Smooth theme transition */
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}

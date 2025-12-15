@@ -1,0 +1,1 @@
+Place static assets (images, fonts) in this folder. They will be served from /assets in production.
